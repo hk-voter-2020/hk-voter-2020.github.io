@@ -1,343 +1,191 @@
 <!doctype html>
-<html amp lang="en">
-<head>
-  <meta charset="utf-8">
-  <script async custom-element="amp-analytics"
-      src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>2019 選民登記行動 — kbfl</title>
-  <link rel="canonical" href="https://kbfl-campaign.github.io/" />
-  <meta name="description" content="2019 年香港選民登記。只要你是香港永久性居民、通常在香港居住及已年滿 18 歲，參與選舉就是你的基本權利。我是方丈選民登記行動。 Hong Kong voter registration.">
-  <meta property="og:url" content="https://kbfl-campaign.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="2019 選民登記行動 — kbfl">
-  <meta property="og:description" content="只要你是香港永久性居民、通常在香港居住及已年滿 18 歲，參與選舉就是你的基本權利。">
-  <meta property="og:image" content="https://kbfl-campaign.github.io/assets/preview.png?20190628a">
-  <meta property="fb:app_id" content="385851745371772">
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@kbflF5" />
-  <meta name="twitter:title" content="2019 選民登記行動 — kbfl" />
-  <meta name="twitter:description" content="只要你是香港永久性居民、通常在香港居住及已年滿 18 歲，參與選舉就是你的基本權利。" />
-  <meta name="twitter:image" content="https://kbfl-campaign.github.io/assets/preview.png?20190628a" />
-  <link rel="shortcut icon" href="favicon.png">
-  <meta name="theme-color" content="#c91f37">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-4.4.1/dist/css/bootstrap.min.css">
 
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  <style amp-custom>
-    /* general */
-    @font-face {
-      font-family: 'Noto Sans TC';
-      font-style: normal;
-      font-weight: 400;
-      src: url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
-           url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
-           url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
-    }
-    @font-face {
-      font-family: 'Noto Sans TC';
-      font-style: normal;
-      font-weight: 200;
-      src: url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
-           url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
-           url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
-    }
-    :root {
-      --brand-red-color: #C91F37;
-      --brand-yellow-color: #E3B130;
-      --brand-blue-color: #4D8FAC;
-      --brand-grey-color: #444;
-      --brand-white-color: #f3f3f3;
-    }
-    body {
-      font-family: 'Noto Sans TC';
-      background-color: var(--brand-grey-color);
-      color: var(--brand-white-color);
-      background-image:url(/assets/paper.png);
-    }
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
-    a {
-      color: var(--brand-white-color);
-    }
-    a.btn {
-      display: inline-block;
-      padding: 2px 1em;
-      text-decoration: none;
-    }
-    a.btn-large {
-      font-size: 1.2em;
-      padding: 6px 2em;
-    }
-    a.btn-brand {
-      background: var(--brand-red-color);
-      color: white;
-    }
+    <title>2019 選民登記行動 — kbfl</title>
+    <link rel="canonical" href="https://kbfl-campaign.github.io/" />
+    <meta name="description" content="2019 年香港選民登記。只要你是香港永久性居民、通常在香港居住及已年滿 18 歲，參與選舉就是你的基本權利。我是方丈選民登記行動。 Hong Kong voter registration.">
+    <meta property="og:url" content="https://kbfl-campaign.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2019 選民登記行動 — kbfl">
+    <meta property="og:description" content="只要你是香港永久性居民、通常在香港居住及已年滿 18 歲，參與選舉就是你的基本權利。">
+    <meta property="og:image" content="https://kbfl-campaign.github.io/assets/preview.png?20190628a">
+    <meta property="fb:app_id" content="385851745371772">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@kbflF5" />
+    <meta name="twitter:title" content="2019 選民登記行動 — kbfl" />
+    <meta name="twitter:description" content="只要你是香港永久性居民、通常在香港居住及已年滿 18 歲，參與選舉就是你的基本權利。" />
+    <meta name="twitter:image" content="https://kbfl-campaign.github.io/assets/preview.png?20190628a" />
+    <link rel="shortcut icon" href="../favicon.png">
+    <meta name="theme-color" content="#c91f37">
+  </head>
+  <body>
 
-    /* container */
-    div.container, section.container, footer.container {
-      display: flex;
-      flex-flow: row wrap;
-    }
-    nav.site-nav, section.container>aside, footer.container>aside {
-      flex: 1 0 12em;
-    }
-    header.hero, section.container>div.section-content, footer.container>div.section-content {
-      flex: 11 0 12em;
-    }
-    @media all and (max-width: 710px) {
-      div.container, section.container, footer.container, nav.site-nav {
-          flex-direction: column;
-      }
-      nav.site-nav, section.container>aside, footer.container>aside {
-        flex: 1 0 0;
-        margin-top: 5em;
-      }
-      header.hero, section.container>div.section-content, footer.container>div.section-content {
-        flex: 11 0 0;
-      }
-    }
 
-    /* nav */
-    nav.site-nav {
-      /*height: 80vh;*/
-      margin-top: 18vh;
-      border-right: 1px solid var(--brand-grey-color);
-      display: flex;
-      justify-content: center;
-    }
-    nav.site-nav>ul {
-      margin-right: 1em;
-      padding-left: 1em;
-    }
-    nav.site-nav>ul, nav.site-nav>ul>li{
-      list-style: none;
-    }
-    nav.site-nav>ul>li{
-      margin-top: 1em;
-    }
-    nav.site-nav>ul>li>a{
-      text-decoration: none;
-    }
-    nav.site-nav>h1 {
-      flex-grow: 1;
-      text-align: right;
-    }
-    @media all and (max-width: 710px) {
-      nav.site-nav>ul {
-        display: none;
-      }
-      nav.site-nav>h1 {
-        text-align: left;
-        margin-left: 10%;
-      }
-    }
-
-    /* hero */
-    header.hero {
-      margin-top: 15vh;
-    }
-    @media all and (max-width: 710px) {
-      header.hero {
-          margin-top: 0;
-      }
-    }
-    header.hero>h1, header.hero>a, header.hero>p{
-      margin-left: 10%;
-    }
-    header.hero>h1{
-      font-weight: 100;
-      font-size: 3em;
-    }
-    header.hero #changeAddress {
-      background-color: var(--brand-blue-color);
-    }
-    header.hero #externalCheck {
-      background-color: var(--brand-yellow-color);
-    }
-
-    /* sections */
-    section.container>aside, footer.container>aside {
-      text-align: right;
-    }
-    section.container>aside>h2, footer.container>aside>h2 {
-      margin-right: 1rem;
-      font-weight: 400;
-    }
-    @media all and (max-width: 710px) {
-      section.container>aside, footer.container>aside {
-        text-align: left;
-      }
-      section.container>aside>h2, footer.container>aside>h2 {
-        margin-left: 1rem;
-      }
-    }
-    section.container>div.section-content>p, section.container>div.section-content>amp-img,
-    footer.container>div.section-content>p, footer.container>div.section-content>amp-img {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-
-    section.container.section-eligibility>aside {
-      background-color: var(--brand-red-color);
-      border-right: 1px solid var(--brand-red-color);
-      color: white;
-    }
-    section.container.section-why-register>aside {
-      background-color: var(--brand-blue-color);
-      border-right: 1px solid var(--brand-blue-color);
-      color: white;
-    }
-    footer.container.section-about-voter-registration>aside {
-      background-color: var(--brand-yellow-color);
-      border-right: 1px solid var(--brand-yellow-color);
-      color: white;
-    }
-  </style>
-</head>
-<body>
-<div class="container" id="container-header">
-  <nav class="site-nav" id="site-nav">
-    <h1>
-      <amp-img
-        src="assets/nav-logo-red.png"
-        srcset="assets/nav-logo-red.png 64w,
-               assets/nav-logo-red@2x.png 120w"
-        width="64"
-        height="64">
-      </amp-img>
-      <img class="preview sr-only" src="assets/preview.png" width="1201" height="631">
-      <span class="sr-only">2019 選民登記行動</span>
-    </h1>
-    <ul>
-      <li><a href="#eligibility">選民資格</a></li>
-      <li><a href="#why-register">為何登記</a></li>
-      <li><a href="#map">選區劃界</a></li>
-      <li><a href="note.html">填表須知</a></li>
-      <li><a href="terms.html">使用條款</a></li>
-    </ul>
-  </nav><!-- #site-nav -->
-  <header class="hero" id="hero">
-    <h1>
-      <strong>2019<wbr>選民登記</strong><br>
-      本週截止！
-    </h1>
-    <p>仲未登記？ 即刻用填表機：</p>
-    <p><a class="btn btn-large btn-brand" id="register" href="app.html" onclick="fbq('track', 'InitiateCheckout');">簡易登記，只需 3 分鐘</a></p>
-    <!--<p><a class="btn btn-large btn-brand" id="changeAddress" href="app-address-change.html">更改地址</a></p>-->
-    <p>此網上填表機直接在你的電腦製作選民登記表格圖像，以便上載至選舉事務處。<br>我們不會傳送及收集你的個人資料。</p>
-    <p>檢查選民登記資料：</p>
-    <p><a class="btn btn-large btn-brand" id="externalCheck" href="https://www1.voterinfo.gov.hk/bd_reovi/OVIES/jsp/mob/intro.jsp">選民資料網上查閱系統</a><br>(選舉事務處網站)</p>
-  </header><!-- #hero -->
-</div><!-- #container-header -->
-<main>
-  <section class="container section-eligibility" id="eligibility">
-    <aside>
-      <h2>選民資格</h2>
-    </aside>
-    <div class="section-content">
-      <p>
-        只要你是香港永久性居民、通常在香港居住及已年滿 18 歲，參與選舉就是你的基本權利。
-      </p>
-      <p>詳情請參閱填表須知。</p>
+    <div class="container" style="margin-top:1em;">
+      <div class="row">
+        <div class="col-6">
+          <a href="#">
+            <img class="w-100" src="../assets/nav-logo-full.png" alt="">
+          </a>
+        </div>
+        <div class="col-6" style="text-align:right;">
+          <a href="#">
+            <img class="w-50" src="../assets/coop.png" alt="">
+          </a>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <div>
+            <canvas id="heroChart" width="400" height="400"></canvas>
+            <div style="position: absolute; bottom:50%; text-align:center; width:90%; font-size:3em;">1000</div>
+          </div>
+        </div>
+        <div class="col-md-7 col-sm-12">
+          <div class="row row-cols-1 row-cols-md-1">
+            <!-- HKI -->
+            <div class="col mb-4">
+              <div class="card border-primary" style="border-width:2px;">
+                <div class="row no-gutters">
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h2 class="card-title">港島區</h3>
+                      <h1 style="font-size:4em;">20</h1>
+                      <p class="card-text">港島需要你擊敗blah blah blah</p>
+                      <a href="/hki/app.html" class="btn btn-primary stretched-link">填寫登記表格 ></a>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                      <canvas id="cardChartInvited" width="400" height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              住在其他選區？
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2">
+            <!-- KLE -->
+            <div class="col mb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h2 class="card-title">九龍東</h2>
+                      <h3 class="card-text">10</h3>
+                      <a href="/kle/app.html" class="text-body stretched-link">填寫登記表格 ></a>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                      <canvas id="cardChartKle" width="400" height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- KLW -->
+            <div class="col mb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h2 class="card-title">九龍西</h2>
+                      <h3 class="card-text">3</h3>
+                      <a href="/klw/app.html" class="text-body stretched-link">填寫登記表格 ></a>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                      <canvas id="cardChartKlw" width="400" height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- NTE -->
+            <div class="col mb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h2 class="card-title">新界東</h2>
+                      <h3 class="card-text">52</h3>
+                      <a href="/nte/app.html" class="text-body stretched-link">填寫登記表格 ></a>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                      <canvas id="cardChartNte" width="400" height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- NTW -->
+            <div class="col mb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h2 class="card-title">新界西</h2>
+                      <h3 class="card-text">6</h3>
+                      <a href="/ntw/app.html" class="text-body stretched-link">填寫登記表格 ></a>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                      <canvas id="cardChartNtw" width="400" height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- HKI -->
+            <div class="col mb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h2 class="card-title">港島區</h2>
+                      <h3 class="card-text">10</h3>
+                      <a href="/hki/app.html" class="text-body stretched-link">填寫登記表格 ></a>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                      <canvas id="cardChartHki" width="400" height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                  <div class="card-body">
+                    <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        區議會分區搜尋
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section><!-- #eligibility -->
-  <section class="container section-why-register" id="why-register">
-    <aside>
-      <h2>為何登記</h2>
-    </aside>
-    <div class="section-content">
-      <p>根據選舉事務處公布的數字，現時 18-30 歲的青年選民只有 618,300 人，而 18-20 歲則有 112,000 人。17-20 歲合資格登記人士中，有 52.1% 未有登記成為選民，明顯偏低。假如他們全數登記為選民並投票，足以包攬至少 2 個立法會議席。</p>
-      <amp-img
-        src="assets/521.png"
-        width="542"
-        height="351"
-        layout="responsive"
-        >
-      </amp-img>
-      <p>立法會換屆選舉將在今年9月舉行，如果你未及在 5 月 2 日前做好登記，下一次大選會係 4 年之後。試回憶 2012 年的香港，覺得變化很大嗎? 近年香港政治風起雲湧，你有責任為香港未來投下一票。</p>
-    </div>
-  </section><!-- #register -->
-  <footer class="container section-about-voter-registration" id="about-voter-registration">
-    <aside>
-      <h2>2018 選民登記行動</h2>
-    </aside>
-    <div class="section-content">
-      <p><code>voter-registration</code> is a Keyboard Fontline campaign, you may <a href="https://github.com/kbflf5/voter-registration">contribute</a> to the project on Github. Live code is also avaliable for <a href="https://github.com/kbfl-campaign/kbfl-campaign.github.io">review</a> there.</p>
-    </div>
-  </footer><!-- #about-voter-registration -->
-  <section class="container section-waiver" id="waiver">
-    <aside>
-      <h2>條款及免責聲明</h2>
-    </aside>
-    <div class="section-content">
-      <p>鍵盤戰線提供此「選民登記填表工具」（下稱工具），旨在希望它有用而能夠簡化填寫選民登記表格的繁瑣步驟。鍵盤戰線不會收集任何你在使用此工具時填寫的個人資料。此工具在你的裝置上直接產生選民登記表格圖像，此工具一經載入，不會提交任何資料至鍵盤戰線的伺服器。儘管此工具的設計會避免使個人資料外洩，你亦必須明白鍵盤戰線不能控制你的使用方式，亦不能保證你用來使用此工具的網絡、裝置、操作系統及瀏覽器軟件沒有缺陷（包括安全缺陷）並因此造成資料外洩。</p>
-      <p>放棄追究責任。在任何情況下，鍵盤戰線均不應對因你所引起的任何相因性、偶發性、間接性、特殊性或懲罰性賠償承擔責任，無論該等責任是衍生自合同、保證、侵權、過失、嚴格責任、免責或其它理論，以及鍵盤戰線是否已告知你發生此類損失的可能性。即使與任何有限救濟的實質目的相矛盾，此限制仍應有效。此外，在任何情況下，鍵盤戰線因本協定或與本協定相關原因而承擔的責任總額均不應超過港幣一元。</p>
-      <p>你同意維護鍵盤戰線豁免於任何所有因你使用此程式中的責任而引起的任何索賠責任要求，同時承擔鍵盤戰線在對任何此類索賠要求或訴訟做出抗辯而引致的所有任何費用、開支、律師費、調解費、裁決或賠償金。你應負責開展和控制針對此類索賠要求的抗辯，並承擔相應費用。</p>
-      <p>WAIVER OF LIABILITY: In no event shall Keyboard Frontline be liable for any consequential, incidental, indirect, special, or punitive damages incurred by you and arising out fo the use of this program, whether or not such loss or damage is based in contract, warranty, tort, negligence, strict liability, indemnity, or otherwise, even if Keyboard Frontline has advised you of the possibility of such damages. These limitations shall apply nothwistnading any failure of essential purpose of any limited remedy. The maximum totaly libality of Keyboard Frontline shall not be more than HK$1 in any event.</p>
-      <p>You shall fully indemnify and hold Keyboard Frontline harmless from and against any and all claims of any kind arising out of the use of this program including any and all expenses, costs, legal fees, settlements, judgements or awards incurred by you in in the defense of any such claim or lawsuit.</p>
-    </div>
-  </section><!-- #register -->
-</main>
-<amp-analytics type="googleanalytics" id="analytics">
-  <script type="application/json">
-  {
-    "vars": {
-      "account": "UA-72771086-1"
-    },
-    "triggers": {
-      "trackPageview": {
-        "on": "visible",
-        "request": "pageview"
-      },
-      "trackClickOnApplink" : {
-        "on": "click",
-        "selector": ".applink",
-        "request": "pageview",
-        "vars": {
-          "documentLocation": "https://kbfl-campaign.github.io/app.html"
-        }
-      }
-    }
-  }
-  </script>
-</amp-analytics>
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '385851745371772');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=385851745371772&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-<script>
-  (function(){
-    const rules = [
-      'WebView',
-      '(iPhone|iPod|iPad)(?!.*Safari\/)',
-      'Android.*(wv|\.0\.0\.0)',
-    ];
-    const regex = new RegExp(`(${rules.join('|')})`, 'ig');
-    if (Boolean(navigator.userAgent.match(regex))) document.querySelector(".btn#register").href = "webview.html";
-  })();
-</script>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script src="../shared/index.js"></script>
+  </body>
 </html>
