@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex">
 
-    <title>同抗爭做選民</title>
+  <title>同抗爭做選民</title>
   <link rel="canonical" href="https://hk-voter-2020-staging.github.io/hki/app.html" />
   <meta name="description" content="2019 年香港選民登記。只要你是香港永久性居民、通常在香港居住及已年滿 18 歲，參與選舉就是你的基本權利。我是方丈選民登記行動。 Hong Kong voter registration.">
   <meta property="og:url" content="https://hk-voter-2020-staging.github.io/hki/app.html">
@@ -21,17 +21,6 @@
   <meta name="theme-color" content="#c91f37">
 
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <script>
-    (function(){
-      const rules = [
-        'WebView',
-        '(iPhone|iPod|iPad)(?!.*Safari\/)',
-        'Android.*(wv|\.0\.0\.0)',
-      ];
-      const regex = new RegExp(`(${rules.join('|')})`, 'ig');
-      if (Boolean(navigator.userAgent.match(regex))) window.location.href = "https://kbfl-campaign.github.io/";
-    })();
-  </script>
   <script src="/shared/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
   <link href="/bootstrap/css/bootstrap-app.min.css" rel="stylesheet">
@@ -85,8 +74,8 @@
         <div class="col-sm-8">
           <h3>零、成效統計</h3>
           <p>你同意提供你透過「選民登記填表工具 by 鍵盤戰線」下載選民登記表格次數的匿名數據，幫助 鍵盤戰線 統計是次活動的成效及改善系統設計嗎？</p>
-          <!--<div class="form-inline" id="optin">
-            <div class="btn-group optin" data-toggle="buttons">
+          <div class="form-inline" id="optin">
+          <!--  <div class="btn-group optin" data-toggle="buttons">
               <label class="btn btn-default">
                 <input type="radio" name="optin" id="optin-agree" class="radio-button optin-button" autocomplete="off">
                 我同意提供上述匿名數據。
