@@ -1,3 +1,5 @@
+/* Chart */
+
 Chart.pluginService.register({
     beforeDraw: function (chart) {
         var width = chart.chart.width,
@@ -52,9 +54,66 @@ var heroChart = new Chart(document.getElementById('heroChart').getContext('2d'),
       },
       elements: {
         center: {
-          title: '1,000',
+          title: '0',
           text: '參與人數',
         }
       },
     }
 });
+
+
+
+/* calculate counter */
+function updateCount() {
+  var count = {
+    "hki": {
+      "startOfDay": 0,
+      "endOfDay": 60,
+      "current": 0
+    },
+    "nte": {
+      "startOfDay": 0,
+      "endOfDay": 33,
+      "current": 0
+    },
+    "ntw": {
+      "startOfDay": 0,
+      "endOfDay": 27,
+      "current": 0
+    },
+    "kle": {
+      "startOfDay": 0,
+      "endOfDay": 55,
+      "current": 0
+    },
+    "klw": {
+      "startOfDay": 0,
+      "endOfDay": 110,
+      "current": 0
+    },
+    "total": {
+      "current": 0
+    },
+  };
+  var dt = new Date();
+  var portionOfDay = (dt.getSeconds() + (60 * dt.getMinutes()) + (60 * 60 * dt.getHours()))/86400;
+
+  count.hki.current = Math.floor(count.hki.startOfDay + ((count.hki.endOfDay - count.hki.startOfDay) * portionOfDay));
+  count.kle.current = Math.floor(count.kle.startOfDay + ((count.kle.endOfDay - count.kle.startOfDay) * portionOfDay));
+  count.klw.current = Math.floor(count.klw.startOfDay + ((count.klw.endOfDay - count.klw.startOfDay) * portionOfDay));
+  count.nte.current = Math.floor(count.nte.startOfDay + ((count.nte.endOfDay - count.nte.startOfDay) * portionOfDay));
+  count.ntw.current = Math.floor(count.ntw.startOfDay + ((count.ntw.endOfDay - count.ntw.startOfDay) * portionOfDay));
+
+  count.total.current = count.hki.current+count.kle.current+count.klw.current+count.nte.current+count.ntw.current
+
+  window.heroChart.data.datasets[0].data = [count.hki.current, count.kle.current, count.klw.current, count.nte.current, count.ntw.current]
+  heroChart.options.elements.center.title = count.total.current;
+  window.heroChart.update();
+  document.querySelector('.count-card-hki').innerText = count.hki.current;
+  document.querySelector('.count-card-kle').innerText = count.kle.current;
+  document.querySelector('.count-card-klw').innerText = count.klw.current;
+  document.querySelector('.count-card-nte').innerText = count.nte.current;
+  document.querySelector('.count-card-ntw').innerText = count.ntw.current;
+
+}
+var intervalID = window.setInterval(updateCount, 1000);

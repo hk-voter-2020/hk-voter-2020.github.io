@@ -106,6 +106,90 @@
       </div><!-- /.step.step-0.current-step.row -->
 
       <div class="step step-1 row">
+        <div class="col-sm-12">
+          <h3>一、首先，要填中文名，你叫咩名呢?</h3>
+        </div><!-- /.col-sm-12 -->
+        <div class="col-sm-8">
+          <div id="name-zh-form">
+            <div class="form-group has-feedback">
+              <p class="redtape">本人在香港身分證所載的姓名</p>
+              <label class="control-label" for="name-zh" >中文姓名</label>
+              <input class="form-control name-zh" id="name-zh" type="text" placeholder="王一心" maxlength="6" autocomplete="off">
+            </div>
+          </div><!-- /.name-zh-form -->
+        </div><!-- /.col-sm-6 -->
+        <div class="col-sm-4">
+          <img src="/assets/id-zh.png" class="img-responsive" alt="Illustration">
+        </div><!-- /.col-sm-6 -->
+        <div class="col-sm-12">
+          <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
+        </div><!-- /.col-sm-12 -->
+      </div><!-- /.step.step-1.next-steps.row -->
+
+      <div class="step step-2 row">
+        <div class="col-sm-12">
+          <h3>二、英文名呢?</h3>
+        </div><!-- /.col-sm-12 -->
+        <div class="col-sm-8">
+          <div id="name-en-form">
+            <div class="form-group">
+              <p class="redtape">本人在香港身分證所載的姓名</p>
+              <label class="control-label" for="name-en-surname">英文姓氏</label>
+              <input class="form-control name-en" id="name-en-surname" type="text" placeholder="WONG" maxlength="29" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="name-en-othername">英文名字</label>
+              <input class="form-control name-en" id="name-en-othername" type="text" placeholder="Yat Sum" maxlength="29" autocomplete="off">
+            </div>
+          </div>
+        </div><!-- /.col-sm-6 -->
+        <div class="col-sm-4">
+          <img src="/assets/id-en.png" class="img-responsive" alt="Illustration">
+        </div><!-- /.col-sm-6 -->
+        <div class="col-sm-12">
+          <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
+        </div><!-- /.col-sm-12 -->
+      </div><!-- /.step.step-2.next-steps.row -->
+
+      <div class="step step-3 row">
+        <div class="col-sm-12">
+          <h3>三、 填埋身份證上嘅其他資料吖~</h3>
+        </div><!-- /.col-sm-12 -->
+        <div class="col-sm-12">
+          <p>香港身分證號碼</p>
+          <div class="row form-inline" id="idcard">
+            <div class="form-group col-sm-1">
+              <label class="sr-only" for="idcard-letters">身份證號碼字母</label>
+              <input class="form-control idcard-letters" id="idcard-letters" type="text" placeholder="K" maxlength="2" autocomplete="off">
+            </div>
+            <div class="form-group col-sm-5 col-md-3">
+              <label class="sr-only" for="idcard-digits">身份證號碼數字</label>
+              <div class="input-group">
+                <input class="form-control idcard-digits" id="idcard-digits" type="text" placeholder="123456" maxlength="6" aria-describedby="idcard-checksum" autocomplete="off">
+                <span class="input-group-addon" id="idcard-checksum">( )</span>
+              </div>
+            </div>
+          </div>
+          <p>身份證上的性別</p>
+          <div class="form-inline" id="gender">
+            <div class="btn-group gender" data-toggle="buttons">
+              <label class="btn gender-btn btn-default">
+                <input type="radio" name="gender" id="gender-male" class="radio-button gender-button" autocomplete="off">
+                <span class="btn-text">男</span>
+              </label>
+              <label class="btn gender-btn btn-default">
+                <input type="radio" name="gender" id="gender-female" class="radio-button gender-button" autocomplete="off">
+                <span class="btn-text">女</span>
+              </label>
+            </div>
+          </div>
+        </div><!-- /.col-sm-12 -->
+        <div class="col-sm-12">
+          <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
+        </div><!-- /.col-sm-12 -->
+      </div>
+
+      <div class="step step-4 row">
         <div id="address-form" class="address-form">
           <div class="col-sm-12">
             <h3>四、 填住址</h3>
@@ -152,90 +236,6 @@
           <p class="redtape">(a) 根據你的住址，選舉登記主任會為你編配所屬的立法會地方選區及區議會選區，成為該些選區的選民。你的住址是指你在香港的唯一或主要居所。該住址資料將提供予相關選區的候選人，以作發放選舉廣告的用途。</p>
           <p class="redtape">(b) 日後你的住址如有變更，請即以書面通知選舉登記主任。你的住址更改後，你所屬的選區可能要相應作出更改。</p>
         </div><!-- /.col-sm-9 -->
-        <div class="col-sm-12">
-          <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
-        </div><!-- /.col-sm-12 -->
-      </div>
-
-      <div class="step step-2 row">
-        <div class="col-sm-12">
-          <h3>一、首先，要填中文名，你叫咩名呢?</h3>
-        </div><!-- /.col-sm-12 -->
-        <div class="col-sm-8">
-          <div id="name-zh-form">
-            <div class="form-group has-feedback">
-              <p class="redtape">本人在香港身分證所載的姓名</p>
-              <label class="control-label" for="name-zh" >中文姓名</label>
-              <input class="form-control name-zh" id="name-zh" type="text" placeholder="王一心" maxlength="6" autocomplete="off">
-            </div>
-          </div><!-- /.name-zh-form -->
-        </div><!-- /.col-sm-6 -->
-        <div class="col-sm-4">
-          <img src="/assets/id-zh.png" class="img-responsive" alt="Illustration">
-        </div><!-- /.col-sm-6 -->
-        <div class="col-sm-12">
-          <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
-        </div><!-- /.col-sm-12 -->
-      </div><!-- /.step.step-1.next-steps.row -->
-
-      <div class="step step-3 row">
-        <div class="col-sm-12">
-          <h3>二、英文名呢?</h3>
-        </div><!-- /.col-sm-12 -->
-        <div class="col-sm-8">
-          <div id="name-en-form">
-            <div class="form-group">
-              <p class="redtape">本人在香港身分證所載的姓名</p>
-              <label class="control-label" for="name-en-surname">英文姓氏</label>
-              <input class="form-control name-en" id="name-en-surname" type="text" placeholder="WONG" maxlength="29" autocomplete="off">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="name-en-othername">英文名字</label>
-              <input class="form-control name-en" id="name-en-othername" type="text" placeholder="Yat Sum" maxlength="29" autocomplete="off">
-            </div>
-          </div>
-        </div><!-- /.col-sm-6 -->
-        <div class="col-sm-4">
-          <img src="/assets/id-en.png" class="img-responsive" alt="Illustration">
-        </div><!-- /.col-sm-6 -->
-        <div class="col-sm-12">
-          <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
-        </div><!-- /.col-sm-12 -->
-      </div><!-- /.step.step-2.next-steps.row -->
-
-      <div class="step step-4 row">
-        <div class="col-sm-12">
-          <h3>三、 填埋身份證上嘅其他資料吖~</h3>
-        </div><!-- /.col-sm-12 -->
-        <div class="col-sm-12">
-          <p>香港身分證號碼</p>
-          <div class="row form-inline" id="idcard">
-            <div class="form-group col-sm-1">
-              <label class="sr-only" for="idcard-letters">身份證號碼字母</label>
-              <input class="form-control idcard-letters" id="idcard-letters" type="text" placeholder="K" maxlength="2" autocomplete="off">
-            </div>
-            <div class="form-group col-sm-5 col-md-3">
-              <label class="sr-only" for="idcard-digits">身份證號碼數字</label>
-              <div class="input-group">
-                <input class="form-control idcard-digits" id="idcard-digits" type="text" placeholder="123456" maxlength="6" aria-describedby="idcard-checksum" autocomplete="off">
-                <span class="input-group-addon" id="idcard-checksum">( )</span>
-              </div>
-            </div>
-          </div>
-          <p>身份證上的性別</p>
-          <div class="form-inline" id="gender">
-            <div class="btn-group gender" data-toggle="buttons">
-              <label class="btn gender-btn btn-default">
-                <input type="radio" name="gender" id="gender-male" class="radio-button gender-button" autocomplete="off">
-                <span class="btn-text">男</span>
-              </label>
-              <label class="btn gender-btn btn-default">
-                <input type="radio" name="gender" id="gender-female" class="radio-button gender-button" autocomplete="off">
-                <span class="btn-text">女</span>
-              </label>
-            </div>
-          </div>
-        </div><!-- /.col-sm-12 -->
         <div class="col-sm-12">
           <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
         </div><!-- /.col-sm-12 -->
