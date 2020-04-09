@@ -49,9 +49,8 @@ var heroChart = new Chart(document.getElementById('heroChart').getContext('2d'),
           bottom: 10,
         }
       },
-      legend: {
-        display: false,
-      },
+      legend: { display: false },
+      tooltips: { enabled: false },
       elements: {
         center: {
           title: '0',
@@ -117,3 +116,6 @@ function updateCount() {
 
 }
 var intervalID = window.setInterval(updateCount, 1000);
+
+
+document.querySelector(".card-"+window.location.pathname.substring(1,4)).classList.add('bg-primary')
