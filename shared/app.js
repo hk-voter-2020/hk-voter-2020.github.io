@@ -390,3 +390,5 @@ if (iOS) {
 $(".iOSintroNext").on('click', ()=>{
 	$(".formAndIntroContainer").removeClass("introPending");
 });
+
+document.querySelectorAll(".address-"+window.location.pathname.substring(1,4)).forEach((node)=>{node.removeAttribute('hidden');});
