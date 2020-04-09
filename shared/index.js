@@ -53,8 +53,8 @@ var heroChart = new Chart(document.getElementById('heroChart').getContext('2d'),
       tooltips: { enabled: false },
       elements: {
         center: {
-          title: '0',
-          text: '參與人數',
+          title: '0 人',
+          text: '已登記',
         }
       },
     }
@@ -106,7 +106,7 @@ function updateCount() {
   count.total.current = count.hki.current+count.kle.current+count.klw.current+count.nte.current+count.ntw.current
 
   window.heroChart.data.datasets[0].data = [count.hki.current, count.kle.current, count.klw.current, count.nte.current, count.ntw.current]
-  heroChart.options.elements.center.title = count.total.current;
+  heroChart.options.elements.center.title = count.total.current+" 人";
   window.heroChart.update();
   document.querySelector('.count-card-hki').innerText = count.hki.current;
   document.querySelector('.count-card-kle').innerText = count.kle.current;
