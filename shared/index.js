@@ -67,27 +67,27 @@ function updateCount() {
   var count = {
     "hki": {
       "startOfDay": 0,
-      "endOfDay": 60,
+      "endOfDay": 60*3,
       "current": 0
     },
     "nte": {
       "startOfDay": 0,
-      "endOfDay": 33,
+      "endOfDay": 33*3,
       "current": 0
     },
     "ntw": {
       "startOfDay": 0,
-      "endOfDay": 27,
+      "endOfDay": 27*3,
       "current": 0
     },
     "kle": {
       "startOfDay": 0,
-      "endOfDay": 55,
+      "endOfDay": 55*3,
       "current": 0
     },
     "klw": {
       "startOfDay": 0,
-      "endOfDay": 110,
+      "endOfDay": 110*3,
       "current": 0
     },
     "total": {
